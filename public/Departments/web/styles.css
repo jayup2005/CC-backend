@@ -1,0 +1,316 @@
+/* From Uiverse.io by kennyotsu */ 
+.card {
+    /* color used to softly clip top and bottom of the .words container */
+    --bg-color: #212121;
+    background-color: var(--bg-color);
+    padding: 1rem 2rem;
+    border-radius: 1.25rem;
+  }
+  .loader {
+    color: midnightblue;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 40px;
+    padding: 10px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 8px;
+  }
+  
+  .words {
+    overflow: hidden;
+    position: relative;
+  }
+  .words::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      var(--bg-color) 10%,
+      transparent 30%,
+      transparent 70%,
+      var(--bg-color) 90%
+    );
+    z-index: 20;
+  }
+  
+  .word {
+    display: block;
+    height: 100%;
+    padding-left: 6px;
+    color: #956afa;
+    animation: spin_4991 4s infinite;
+  }
+  
+  @keyframes spin_4991 {
+    10% {
+      -webkit-transform: translateY(-102%);
+      transform: translateY(-102%);
+    }
+  
+    25% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  
+    35% {
+      -webkit-transform: translateY(-202%);
+      transform: translateY(-202%);
+    }
+  
+    50% {
+      -webkit-transform: translateY(-200%);
+      transform: translateY(-200%);
+    }
+  
+    60% {
+      -webkit-transform: translateY(-302%);
+      transform: translateY(-302%);
+    }
+  
+    75% {
+      -webkit-transform: translateY(-300%);
+      transform: translateY(-300%);
+    }
+  
+    85% {
+      -webkit-transform: translateY(-402%);
+      transform: translateY(-402%);
+    }
+  
+    100% {
+      -webkit-transform: translateY(-400%);
+      transform: translateY(-400%);
+    }
+  }
+  
+  :root {
+      --primary-color: #292929;
+      --secondary-color: #333;
+      --background-color: #f4f4f4;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      font-family: sans-serif;
+      color: #f4f4f4;
+      line-height: 1.6;
+      background-color: var(--primary-color);
+      padding: 0;
+  }
+  
+  .main-header {
+      background-color: var(--secondary-color);
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-header h1 {
+      font-size: 2.5em;
+      color: var(--background-color);
+  }
+  
+  .hero-section {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+      color: #f4f4f4;
+  }
+  
+  .hero-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+  }
+  
+  .hero-section p {
+      font-size: 1.2em;
+      margin-bottom: 0;
+  }
+  
+  h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-align: center;
+      color: var(--background-color);
+  }
+  
+  .team-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+  }
+  
+  .subordinate-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+  }
+  
+  .team-member, .subordinate-member {
+      display: flex;
+      align-items: center;
+      background-color: var(--secondary-color);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .team-member:hover, .subordinate-member:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 15px rgba(77, 186, 210, 0.5);
+  }
+  
+  img {
+      width: 160px;
+      height: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+  }
+  
+  .member-details {
+      margin-left: 20px;
+      flex-grow: 1;
+  }
+  
+  .member-details h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #f4f4f4;
+  }
+  
+  .member-details p {
+      font-size: 1em;
+      color: #ccc;
+  }
+  
+  footer {
+      background-color: var(--secondary-color);
+      padding: 20px;
+      text-align: center;
+      margin-top: 50px;
+      color: #f4f4f4;
+  }
+  
+  footer a {
+      color: var(--background-color);
+      text-decoration: none;
+  }
+  
+  footer a:hover {
+      text-decoration: underline;
+  }
+  
+  @media (max-width: 1148px) {
+      .subordinate-grid {
+          grid-template-columns: 1fr 1fr;
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .team-member, .subordinate-member {
+          flex-direction: column;
+          text-align: center;
+      }
+  
+      .member-details {
+          margin-left: 0;
+          margin-top: 15px;
+      }
+  
+      .subordinate-grid {
+          grid-template-columns: 1fr 1fr;
+      }
+  }
+  
+  @media (max-width: 600px) {
+      .main-header h1 {
+          font-size: 2em;
+      }
+  
+      .hero-section h2 {
+          font-size: 2em;
+      }
+  
+      h2 {
+          font-size: 2em;
+      }
+  
+      .team-grid, .subordinate-grid {
+          grid-template-columns: 1fr;
+      }
+  }
+  
+  .logo {
+      width: 64px;
+      height: 64px;
+      padding-left: 0;
+      object-fit: cover;
+  }
+  
+  .pre-loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black; /* Background color for the pre-loader */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease-out;
+  }
+  
+  /* Spinner Pre-loader */
+  .pre-loader .loader {
+      color: rgb(124, 124, 124);
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 25px;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+      height: 40px;
+      padding: 10px 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      border-radius: 8px;
+  }
+  
+  .form {
+      color: #007BFF;
+      margin-left: 5px;
+      font-weight: bold;
+  }
+  
+  @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+  }
+  
+  /* Hide the pre-loader after content is loaded */
+  body.loaded .pre-loader {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+
+  
