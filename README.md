@@ -1,4 +1,4 @@
-# Quotes-App
+# Coding Club NMIMS OFFCIAL WEBSITE
 
 
 # Read Me Template
