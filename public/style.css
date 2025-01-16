@@ -11,8 +11,11 @@ body {
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
     display: block
 }
-#Profile{
+#profile-in{
     display:none;
+}
+#profile-1{
+    display: none;
 }
 .Card-wrapper {
     position: fixed; /* Fixed position relative to the viewport */
@@ -583,7 +586,7 @@ html[data-w-dynpage] [data-w-cloak] {
     text-indent: 0;
     text-transform: inherit;
     text-shadow: none;
-    font-smoothing: auto;
+    font-smooth: auto;
     vertical-align: baseline;
     cursor: inherit;
     white-space: inherit;
@@ -1314,7 +1317,7 @@ textarea.w-input,textarea.w-select {
 }
 
 .w-widget-twitter-count-shim * {
-    pointer-event: none;
+    pointer-events: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none
@@ -1400,7 +1403,7 @@ textarea.w-input,textarea.w-select {
     content: " ";
     height: 0;
     width: 0;
-    pointer-event: none;
+    pointer-events: none;
     border: solid transparent;
     position: absolute;
     top: 100%;
@@ -1472,7 +1475,7 @@ textarea.w-input,textarea.w-select {
     text-align: center;
     clear: both;
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
+    -webkit-text-fill-color: transparent;
     background: #ddd;
     position: relative
 }
@@ -1503,7 +1506,7 @@ textarea.w-input,textarea.w-select {
     height: 40px;
     text-align: center;
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
+    -webkit-text-fill-color: transparent;
     margin: auto;
     padding-top: 10px;
     position: absolute;
@@ -1570,7 +1573,7 @@ textarea.w-input,textarea.w-select {
     cursor: pointer;
     color: #fff;
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
+    -webkit-text-fill-color: transparent;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -1678,9 +1681,7 @@ textarea.w-input,textarea.w-select {
     position: absolute
 }
 
-#profile{
-    display: none;
-}
+
 
 /* Styles for the blur effect and text overlay */
 .event-item-w {
@@ -1921,7 +1922,7 @@ textarea.w-input,textarea.w-select {
     cursor: pointer;
     padding: 2vh 1vh;
     display: inline-block;
-    -webkit-transform: translate(0,0)
+    -webkit-transform: translate(0,0);
 }
 
 .w-lightbox-active {
@@ -2257,7 +2258,7 @@ textarea.w-input,textarea.w-select {
     float: right;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
+    -webkit-text-fill-color: transparent;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
