@@ -11,10 +11,10 @@ body {
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
     display: block
 }
-#profile-in{
+#Profile{
     display:none;
 }
-#profile-1{
+#profile{
     display: none;
 }
 .Card-wrapper {
