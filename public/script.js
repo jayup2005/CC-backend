@@ -106,8 +106,6 @@ if(email != ""){
       document.getElementById('Login').style.display = 'none';
       document.getElementById('login').style.display = 'none';
       document.getElementById('Profile').style.display = 'block';
-      document.getElementById('profile').style.display = 'block';
-
       document.getElementById('psap').innerHTML = sapid;
       document.getElementById('pemail').innerHTML = email;
 
@@ -118,7 +116,7 @@ if(email != ""){
       contentWrapper.classList.remove('blur-background'); 
 
       
-     
+    
      
     }
 
