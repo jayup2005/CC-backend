@@ -11,12 +11,11 @@ body {
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
     display: block
 }
+
 #Profile{
     display:none;
 }
-#profile{
-    display: none;
-}
+
 .Card-wrapper {
     position: fixed; /* Fixed position relative to the viewport */
     top: 0;
@@ -2862,7 +2861,7 @@ ul {
 
 .Tslide-card.has-text {
     grid-column-gap: 35em;
-    grid-row-gap: 35em;
+    grid-row-gap: 20em;
     color: var(--bg-black);
     background-color: #fff;
     flex-direction: column;
@@ -2965,7 +2964,7 @@ ul {
 /* Styling the images inside the slideshow */
 .image-slide {
     width: 100%;
-    height: 110%;
+    height: 100%;
     max-width: none;
     object-fit: fill;
     position: absolute;
@@ -2973,7 +2972,7 @@ ul {
 }
 #image-3slide {
     width: 100%;
-    height: 110%;
+    height: 100%;
     max-width: none;
     object-fit: cover;
     position: absolute;
@@ -2984,7 +2983,7 @@ ul {
 .main-button {
     border: 1px solid var(--bg-black);
     border-radius: 100rem;
-    padding: .5rem .5rem .5rem 1.25rem;
+    padding: .5rem .5rem .5rem .5rem;
     overflow: hidden
 }
 
@@ -5660,6 +5659,7 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+    
     .menu-wrapper {
         padding-left:1em;
         padding-right: 1em
